@@ -6,3 +6,11 @@
 
 # firebase
 **/firebase.config.js
+
+# package
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+#production
+**/build
