@@ -5,5 +5,11 @@
   "main": "index.js",
   "author": "Dan Moneypenny <catullus1973@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start:portfolio": "cd applications/portfolio && yarn start",
+    "build:portfolio": "cd applications/portfolio && yarn build",
+    "start:admin": "cd applications/admin && yarn start",
+    "build:admin": "cd applications/admin && yarn start"
+  }
 }
