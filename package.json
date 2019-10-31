@@ -1,0 +1,9 @@
+{
+  "name": "btm-resources",
+  "version": "1.0.0",
+  "description": "resources for Brian's portfolio",
+  "main": "index.js",
+  "author": "Dan Moneypenny <catullus1973@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

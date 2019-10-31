@@ -1,0 +1,8 @@
+# ios files
+.DS_Store
+
+# system
+**/node_modules
+
+# firebase
+**/firebase.config.js
