@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "btm-resources"
+  },
+  "targets": {
+    "btm-resources": {
+      "hosting": {
+        "portfolio": [
+          "btm-portfolio"
+        ],
+        "admin": [
+          "btm-resources"
+        ]
+      }
+    }
   }
 }

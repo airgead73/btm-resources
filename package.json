@@ -10,7 +10,9 @@
     "start:portfolio": "cd applications/portfolio && yarn start",
     "build:portfolio": "cd applications/portfolio && yarn build",
     "start:admin": "cd applications/admin && yarn start",
-    "build:admin": "cd applications/admin && yarn start"
+    "build:admin": "cd applications/admin && yarn start",
+    "deploy:portfolio": "firebase deploy --only hosting:portfolio",
+    "deploy:admin": "firebase deploy --only hosting:admin"
   },
   "devDependencies": {
     "node-sass": "^4.13.0"
