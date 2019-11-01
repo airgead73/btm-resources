@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-function App() {
+// context
+import { ViewContext } from './contexts/ViewContext';
+
+// routes
+
+
+// layout
+
+const App = () => {
+	const { currentView } = useContext(ViewContext);
 	return <h1>portfolio</h1>;
 }
 
