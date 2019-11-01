@@ -12,7 +12,9 @@
     "start:admin": "cd applications/admin && yarn start",
     "build:admin": "cd applications/admin && yarn start",
     "deploy:portfolio": "firebase deploy --only hosting:portfolio",
-    "deploy:admin": "firebase deploy --only hosting:admin"
+    "deploy:admin": "firebase deploy --only hosting:admin",
+    "css-build:portfolio": "node-sass applications/scss/portfolio.scss applications/portfolio/src/index.css",
+    "css-watch:portfolio": "node-sass applications/scss/portfolio.scss applications/portfolio/src/index.css --watch"
   },
   "devDependencies": {
     "node-sass": "^4.13.0"
