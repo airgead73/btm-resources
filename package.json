@@ -11,5 +11,8 @@
     "build:portfolio": "cd applications/portfolio && yarn build",
     "start:admin": "cd applications/admin && yarn start",
     "build:admin": "cd applications/admin && yarn start"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
   }
 }
