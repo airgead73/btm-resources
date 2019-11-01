@@ -1,5 +1,5 @@
 ## btm-resources
 resources for Brian's portfolio
 
-# branch master
-shell includes portfolio, admin, firebase setup, scss set up
+# branch v1
+set up routes and views
