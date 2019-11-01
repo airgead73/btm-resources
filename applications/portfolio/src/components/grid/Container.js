@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
 import { ViewContext } from '../../contexts/ViewContext';
 
-const Container = ({ children }) => {
-  const { currentView } = useContext(ViewContext);
+const Container = ({ containerClass, children }) => {
   return ( 
-    <div className={`container-${currentView}`}>{children}</div>
+    <div className={`container-${containerClass}`}>{children}</div>
    );
 }
  

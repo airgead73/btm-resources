@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const ViewContext = React.createContext();
 
 export const ViewProvider = props => {
-	const [currentView, setView] = useState('landing');
+	const [currentView, setView] = useState('');
 
 	const changeView = newView => {
 		setView(newView);

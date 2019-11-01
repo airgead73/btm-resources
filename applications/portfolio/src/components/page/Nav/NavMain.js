@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import { ViewContext } from '../../contexts/ViewContext';
+import { ViewContext } from '../../../contexts/ViewContext';
 
 const NavMain = () => {
   const { currentView } = useContext(ViewContext);
