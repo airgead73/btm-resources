@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import { ViewContext } from '../../contexts/ViewContext';
+import React from 'react';
 
-const Main = ({ children }) => {
-  const { currentView } = useContext(ViewContext);
+const Main = ({ mainClass, children }) => {
   return ( 
-    <main className={`main-${currentView}`}>{children}</main>
+    <main className={`main-${mainClass}`}>{children}</main>
    );
 }
  

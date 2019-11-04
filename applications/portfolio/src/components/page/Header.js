@@ -1,13 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ViewContext } from '../../contexts/ViewContext';
 
-
-
-const Header = (props) => {
-  const { currentView } = useContext(ViewContext);
+const Header = ({ headerClass }) => {
   return ( 
-    <header className={`header-${currentView}`}>
+    <header className={`header-${headerClass}`}>
       <h1><Link to='/' title='return to home page'>btm</Link></h1>
      
     </header>

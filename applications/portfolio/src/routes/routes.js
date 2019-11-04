@@ -7,57 +7,45 @@ import Work from '../components/views/Work';
 import Contact from '../components/views/Contact';
 import Terms from '../components/views/Terms';
 
-const routes = [
-  {
-    path: '/',
-    exact: true,
-    view: 'home',
-    render: () => {
-      return(
-        <Home view='home'/>
-      )
-    }
-  },
-  {
-    path: '/about',
-    exact: true,
-    view: 'view',
-    render: () => {
-      return(
-        <About view='about'/>
-      )
-    }
-  }, 
-  {
-    path: '/work',
-    exact: true,
-    view: 'work',
-    render: () => {
-      return(
-        <Work view='work'/>
-      )
-    }
-  },   
-  {
-    path: '/contact',
-    exact: true,
-    view: 'contact',
-    render: () => {
-      return(
-        <Contact view='contact'/>
-      )
-    }
-  },
-  {
-    path: '/terms',
-    exact: true,
-    view: Terms,
-    render: () => {
-      return(
-        <Terms view='terms'/>
-      )
-    }
-  }
-];
+import WorkModality from '../components/views/WorkModality';
+import WorkCategory from '../components/views/WorkCategory';
 
-export default routes;
+export const routes = [
+	{
+		path: '/',
+    exact: true,
+    component: () => { return (<Home view='home'/>)}  
+	},
+	{   
+		path: '/about',
+		exact: true,
+    component: () => { return (<About view='about'/>)}
+	},
+	{
+		path: '/work',
+		exact: true,
+    component: () => { return (<Work view='work'/>)}
+	},
+	{
+		path: '/contact',
+		exact: true,
+    component: () => { return (<Contact view='contact'/>)}
+	},
+	{
+		path: '/terms',
+		exact: true,
+    component: () => { return (<Terms view='terms'/>)}
+  },
+  {
+    path: '/work/:modality',
+    exact: false,
+    component: () => { return (<WorkModality/>)}
+  },
+  {
+    path: '/work/:modality/:category',
+    exact: false,
+    component: () => { return (<WorkModality/>)}
+  }
+
+	
+];

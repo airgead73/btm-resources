@@ -1,16 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import { ViewContext } from '../../contexts/ViewContext';
 
-const Contact = ({ view }) => {
-  const { currentView, changeView } = useContext(ViewContext);
+const Contact = () => {
+  const { changeView } = useContext(ViewContext);
 
   useEffect(() => {
-    document.title = view;
-    changeView(view);
+    changeView('contact')  
   },[changeView]);
 
   return ( 
-    <h1>{currentView}</h1>
+    <h1>Contact</h1>
    );
 }
  

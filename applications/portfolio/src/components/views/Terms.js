@@ -1,16 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import { ViewContext } from '../../contexts/ViewContext';
 
-const Terms = ({ view }) => {
-  const { currentView, changeView } = useContext(ViewContext);
+const Terms = () => {
+  const { changeView } = useContext(ViewContext);
 
   useEffect(() => {
-    document.title = view;
-    changeView(view);
-  },[changeView]);
+    changeView('terms');   
+  },[changeView]); 
 
   return ( 
-    <h1>{currentView}</h1>
+    <h1>Terms</h1>
    );
 }
  

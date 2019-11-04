@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { ViewContext } from '../../contexts/ViewContext';
+import React from 'react';
 
 const Container = ({ containerClass, children }) => {
   return ( 

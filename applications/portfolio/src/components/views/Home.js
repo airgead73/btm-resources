@@ -1,16 +1,18 @@
 import React, { useContext, useEffect } from 'react';
 import { ViewContext } from '../../contexts/ViewContext';
 
-const Home = ({ view }) => {
-  const { currentView, changeView } = useContext(ViewContext);
+const Home = () => {
+  const { changeView } = useContext(ViewContext);
 
-  useEffect(() => {
-    document.title = view;
-    changeView(view);
+  useEffect(() => {    
+    changeView('home');
   },[changeView]);
 
   return ( 
-    <h1>{currentView}</h1>
+    <React.Fragment>
+    <h1>Home</h1>
+    </React.Fragment>
+
    );
 }
  
