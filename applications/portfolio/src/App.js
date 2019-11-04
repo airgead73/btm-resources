@@ -46,18 +46,7 @@ const App = () => {
 						path='/work'
 						component={Work}
 					/>
-					<Route
-						path='/work/sculpture'
-						component={WorkModality}
-					/>
-					<Route
-						path='/work/painting'
-						component={WorkModality}
-					/>
-					<Route
-						path='/work/drawing'
-						component={WorkModality}
-					/>												
+												
 					<Route
 						path='/contact'
 						component={Contact}
