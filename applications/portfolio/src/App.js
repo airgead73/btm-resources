@@ -17,7 +17,6 @@ import Main from './components/page/Main';
 import Home from './components/views/Home';
 import About from './components/views/About';
 import Work from './components/views/Work';
-import WorkModality from './components/views/WorkModality';
 import Contact from './components/views/Contact';
 import Terms from './components/views/Terms';
 

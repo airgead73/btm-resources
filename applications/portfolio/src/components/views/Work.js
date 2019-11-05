@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { Route, Link } from 'react-router-dom';
 import { ViewContext } from '../../contexts/ViewContext';
-//import WorkModality from './WorkModality';
 
 const works = [
   {
