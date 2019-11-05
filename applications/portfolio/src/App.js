@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 // context
-import { ViewContext } from './contexts/ViewContext';
+//import { ViewContext } from './contexts/ViewContext';
 
 // routes
 //import { routes } from './routes/routes';
@@ -16,21 +16,20 @@ import Main from './components/page/Main';
 // views
 import Home from './components/views/Home';
 import About from './components/views/About';
-import Work from './components/views/Work';
+import Work from './components/views/Work/Work';
 import Contact from './components/views/Contact';
 import Terms from './components/views/Terms';
 
 
 const App = () => {
-	const { currentView } = useContext(ViewContext);
-	useEffect(() => {
-		document.title = currentView;
-	})
+
+	document.title = 'portfolio';
+
 	return (
-		<Container containerClass={currentView}>
-			<Header headerClass={currentView}/>
-			<NavMain navClass={currentView}/>
-			<Main mainClass={currentView}>
+		<Container>
+			<Header/>
+			<NavMain/>
+			<Main>
 				<Switch>
 					<Route
 						path='/'

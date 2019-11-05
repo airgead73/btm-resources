@@ -1,12 +1,6 @@
-import React, { useContext, useEffect } from 'react';
-import { ViewContext } from '../../contexts/ViewContext';
+import React from 'react';
 
 const Contact = () => {
-  const { changeView } = useContext(ViewContext);
-
-  useEffect(() => {
-    changeView('contact')  
-  },[changeView]);
 
   return ( 
     <h1>Contact</h1>

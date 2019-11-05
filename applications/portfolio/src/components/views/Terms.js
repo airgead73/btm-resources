@@ -1,12 +1,6 @@
-import React, { useContext, useEffect } from 'react';
-import { ViewContext } from '../../contexts/ViewContext';
+import React from 'react';
 
 const Terms = () => {
-  const { changeView } = useContext(ViewContext);
-
-  useEffect(() => {
-    changeView('terms');   
-  },[changeView]); 
 
   return ( 
     <h1>Terms</h1>
