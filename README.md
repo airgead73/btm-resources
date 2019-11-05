@@ -1,5 +1,5 @@
 ## btm-resources
 resources for Brian's portfolio
 
-# branch v1
-set up routes and views
+# branch v2
+refactor routes and views
