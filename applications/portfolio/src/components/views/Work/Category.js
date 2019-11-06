@@ -1,7 +1,7 @@
 import React from 'react';
 
 // data
-import works from './work.data';
+import works from '../../../routes/routes';
 
 const Category = ({ match }) => {
   const category = works.find(({ id }) => id === match.params.modalityID)

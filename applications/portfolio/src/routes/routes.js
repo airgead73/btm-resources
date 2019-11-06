@@ -1,51 +1,85 @@
-import React from 'react';
-
-// views
-import Home from '../components/views/Home';
-import About from '../components/views/About';
-import Work from '../components/views/Work';
-import Contact from '../components/views/Contact';
-import Terms from '../components/views/Terms';
-
-import WorkModality from '../components/views/WorkModality';
-import WorkCategory from '../components/views/WorkCategory';
-
-export const routes = [
+const works = [
 	{
-		path: '/',
-    exact: true,
-    component: () => { return (<Home view='home'/>)}  
-	},
-	{   
-		path: '/about',
-		exact: true,
-    component: () => { return (<About view='about'/>)}
-	},
-	{
-		path: '/work',
-		exact: true,
-    component: () => { return (<Work view='work'/>)}
+		id: 'sculpture',
+		name: 'sculpture',
+		description: 'Works made with bronze, marble, and clay',
+		categories: [
+			{
+				id: 'abstract',
+				name: 'abstract',
+				description: 'abstract sculpture pieces'
+			},
+			{
+				id: 'figure',
+				name: 'figure',
+				description: 'human figure sculptures'
+			},
+			{
+				id: 'portrait',
+				name: 'portrait',
+				description: 'human portrait sculptures'
+			}
+		]
 	},
 	{
-		path: '/contact',
-		exact: true,
-    component: () => { return (<Contact view='contact'/>)}
+		id: 'painting',
+		name: 'painting',
+		description: 'Portraits, landscapes, and still life',
+		categories: [
+			{
+				id: 'abstract',
+				name: 'abstract',
+				description: 'abstract painting pieces'
+			},
+			{
+				id: 'figure',
+				name: 'figure',
+				description: 'human figure painting'
+			},
+			{
+				id: 'portrait',
+				name: 'portrait',
+				description: 'human portrait painting'
+			},
+			{
+				id: 'stillLife',
+				name: 'still life',
+				description: 'still life painting'
+			},
+			{
+				id: 'landscape',
+				name: 'landscape',
+				description: 'landscape painting'
+			}
+		]
 	},
 	{
-		path: '/terms',
-		exact: true,
-    component: () => { return (<Terms view='terms'/>)}
-  },
-  {
-    path: '/work/:modality',
-    exact: false,
-    component: () => { return (<WorkModality/>)}
-  },
-  {
-    path: '/work/:modality/:category',
-    exact: false,
-    component: () => { return (<WorkModality/>)}
-  }
-
-	
+		id: 'drawing',
+		name: 'drawing',
+		description: 'Portraits, landscapes, and still life',
+		categories: [
+			{
+				id: 'abstract',
+				name: 'abstract',
+				description: 'abstract drawing'
+			},
+			{
+				id: 'figure',
+				name: 'figure',
+				description: 'human figure drawing'
+			},
+			{
+				id: 'portrait',
+				name: 'portrait',
+				description: 'human portrait drawing'
+			},
+			{
+				id: 'landscape',
+				name: 'landscape',
+				description: 'landscape drawing'
+			}
+		]
+	}
 ];
+
+export default works;

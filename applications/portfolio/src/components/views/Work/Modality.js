@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import works from './work.data';
+import works from '../../../routes/routes';
 
 // component
 import Category from './Category';

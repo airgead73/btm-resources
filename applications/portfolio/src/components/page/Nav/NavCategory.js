@@ -5,7 +5,7 @@ import { ViewContext } from '../../../contexts/ViewContext';
 const NavCategory = ({ match, modality }) => {
 	const { changeLevel } = useContext(ViewContext);
 	const { modalityID } = match.params;
-	console.log(modalityID);
+
 	return (
 		<ul>
 			{modality.categories.map(category => (

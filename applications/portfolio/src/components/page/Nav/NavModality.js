@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ViewContext } from '../../../contexts/ViewContext';
 
 // data
-import works from '../../views/Work/work.data';
+import works from '../../../routes/routes';
 
 const NavModality = ({ match }) => {
 	const { changeLevel } = useContext(ViewContext);
