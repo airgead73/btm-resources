@@ -1,26 +1,21 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import works from './work.data';
 
 // component
-import Piece from './Piece';
+import Category from './Category';
+import NavCategory from '../../page/Nav/NavCategory';
 
 const Modality = ({ match }) => {
-  const modality = works.find(({ id }) => id === match.params.modalityId)
+  const modality = works.find(({ id }) => id === match.params.modalityID)
 	return (
     <React.Fragment>
       <h2>{modality.name}</h2>
       <p>{modality.description}</p>
 
-      <ul>
-        {modality.categories.map((category) => (
-          <li key={category.id}>
-            <Link to={`${match.url}/${category.id}`}>{category.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <NavCategory match={match} modality={modality}/>
 
-      <Route path={`${match.path}/:pieceId`} render={(props) => (<Piece {...props}/>)}/>
+      <Route path={`${match.path}/:categoryID`} render={(props) => (<Category {...props}/>)}/>
     </React.Fragment>
   
   );

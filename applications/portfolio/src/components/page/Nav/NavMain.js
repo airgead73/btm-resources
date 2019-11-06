@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom';
 import { ViewContext } from '../../../contexts/ViewContext';
 
 const NavMain = () => {
-  const { currentView } = useContext(ViewContext);
+  const { changeLevel } = useContext(ViewContext);
   return ( 
-    <nav className={`nav-main-${currentView}`} id="nav-primary">
+    <nav id="nav-primary">
       <ul>       
-        <li><NavLink className="button" activeClassName="nav-active" to="/">home</NavLink></li>
-        <li><NavLink className="button" activeClassName="nav-active" to="/about">about</NavLink></li>
-        <li><NavLink className="button" activeClassName="nav-active" to="/work">work</NavLink></li>
-        <li><NavLink className="button" activeClassName="nav-active" to="/contact">contact</NavLink></li>
-        <li><NavLink className="button" activeClassName="nav-active" to="/terms">terms</NavLink></li>       
+        <li><NavLink className="button" activeClassName="nav-active" to="/" onClick={() => {changeLevel('a', 'home')}}>home</NavLink></li>
+        <li><NavLink className="button" activeClassName="nav-active" to="/about" onClick={() => {changeLevel('a', 'about')}}>about</NavLink></li>
+        <li><NavLink className="button" activeClassName="nav-active" to="/work" onClick={() => {changeLevel('a', 'work')}}>work</NavLink></li>
+        <li><NavLink className="button" activeClassName="nav-active" to="/contact" onClick={() => {changeLevel('a', 'contact')}}>contact</NavLink></li>
+        <li><NavLink className="button" activeClassName="nav-active" to="/terms" onClick={() => {changeLevel('a', 'terms')}}>terms</NavLink></li>       
       </ul>
     </nav>
    );

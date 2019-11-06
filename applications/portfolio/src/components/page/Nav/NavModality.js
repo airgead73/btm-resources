@@ -2,32 +2,27 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ViewContext } from '../../../contexts/ViewContext';
 
-const NavMain = () => {
-  const { currentView } = useContext(ViewContext);
-  return ( 
-    <nav className={`nav-modality-${currentView}`} id="nav-modality">
-      <ul>       
-        <li><Link className="button" to={{
-          pathname: '/work/sculpture',
-          state: {
-            modality: 'sculpture'
-          }
-        }}>sculpture</Link></li>
-        <li><Link className="button" to={{
-          pathname: '/work/drawing',
-          state: {
-            modality: 'drawing'
-          }
-        }}>drawing</Link></li>
-        <li><Link className="button" to={{
-          pathname: '/work/painting',
-          state: {
-            modality: 'painting'
-          }
-        }}>painting</Link></li>              
-      </ul>
-    </nav>
-   );
-}
- 
-export default NavMain;
+// data
+import works from '../../views/Work/work.data';
+
+const NavModality = ({ match }) => {
+	const { changeLevel } = useContext(ViewContext);
+	return (
+		<ul>
+			{works.map(({ name, id }) => (
+				<li key={id}>
+					<Link
+						to={`${match.url}/${id}`}
+						onClick={() => {
+							changeLevel('b', `${name}`);
+						}}
+					>
+						{name}
+					</Link>
+				</li>
+			))}
+		</ul>
+	);
+};
+
+export default NavModality;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 // context
-//import { ViewContext } from './contexts/ViewContext';
+import { ViewContext } from './contexts/ViewContext';
 
 // routes
 //import { routes } from './routes/routes';
@@ -23,7 +23,11 @@ import Terms from './components/views/Terms';
 
 const App = () => {
 
-	document.title = 'portfolio';
+	const { docTitle } = useContext(ViewContext);
+	
+	useEffect(() => {
+		document.title = docTitle;
+	},[docTitle]);
 
 	return (
 		<Container>

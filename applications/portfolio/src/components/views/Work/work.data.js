@@ -74,11 +74,6 @@ const works = [
 				description: 'human portrait drawing'
 			},
 			{
-				id: 'stillLife',
-				name: 'still life',
-				description: 'still life drawing'
-			},
-			{
 				id: 'landscape',
 				name: 'landscape',
 				description: 'landscape drawing'
