@@ -1,5 +1,5 @@
 ## btm-resources
 resources for Brian's portfolio
 
-# branch v2
-refactor routes and views
+# branch v3
+conditional routes on modality and category
