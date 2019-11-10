@@ -19,6 +19,7 @@ import About from './components/views/About';
 import Work from './components/views/Work/Work';
 import Contact from './components/views/Contact';
 import Terms from './components/views/Terms';
+import Seed from './components/views/Seed';
 
 
 const App = () => {
@@ -57,7 +58,12 @@ const App = () => {
 						path='/terms'
 						exact
 						component={Terms}
-					/>																		
+					/>
+					<Route
+						path='/seed'
+						exact
+						component={Seed}
+					/>																							
 				</Switch>
 			</Main>
 		</Container>

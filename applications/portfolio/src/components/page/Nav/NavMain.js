@@ -66,7 +66,7 @@ const NavMain = () => {
 					>
 						terms
 					</NavLink>
-				</li>
+				</li>			
 			</ul>
 		</nav>
 	);

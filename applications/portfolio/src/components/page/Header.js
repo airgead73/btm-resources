@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ViewContext } from '../../contexts/ViewContext';
 
 const Header = ({ headerClass }) => {
-  return ( 
-    <header className={`header-${headerClass}`}>
-      <h1><Link to='/' title='return to home page'>btm</Link></h1>
-     
-    </header>
-   );
-}
- 
+	const { changeLevel } = useContext(ViewContext);
+	return (
+		<header className={`header-${headerClass}`}>
+			<h1>
+        <Link 
+          to="/" 
+          title="return to home page"
+          onClick={() => {
+            changeLevel('a', 'home');
+          }}
+        >
+					btm
+				</Link>
+			</h1>
+		</header>
+	);
+};
+
 export default Header;
