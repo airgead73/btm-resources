@@ -79,7 +79,12 @@ const works = [
 				description: 'landscape drawing'
 			}
 		]
-	}
+	},
+	{
+		id: 'welding',
+		name: 'welding',
+		description: 'abstract art welded together'
+	}	
 ];
 
 export default works;
