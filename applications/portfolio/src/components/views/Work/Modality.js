@@ -7,15 +7,29 @@ import Category from './Category';
 import NavCategory from '../../page/Nav/NavCategory';
 
 const Modality = ({ match }) => {
-  const modality = works.find(({ id }) => id === match.params.modalityID)
+  const modality = works.find(({ id }) => id === match.params.modalityID);
+  const { categories } = modality;
 	return (
     <React.Fragment>
       <h2>{modality.name}</h2>
       <p>{modality.description}</p>
 
-      <NavCategory match={match} modality={modality}/>
+      {categories && (
+        <React.Fragment>
+          <NavCategory match={match} modality={modality}/>
+          <Route path={`${match.path}/:categoryID`} render={(props) => (<Category {...props}/>)}/>
+        </React.Fragment>
+      )}
 
-      <Route path={`${match.path}/:categoryID`} render={(props) => (<Category {...props}/>)}/>
+      {!categories && (
+        <React.Fragment>
+          <h3>display {modality.name} pieces here.</h3>
+        </React.Fragment>
+      )}      
+
+      {/* <NavCategory match={match} modality={modality}/>
+
+      <Route path={`${match.path}/:categoryID`} render={(props) => (<Category {...props}/>)}/> */}
     </React.Fragment>
   
   );
