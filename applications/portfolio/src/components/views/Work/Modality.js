@@ -16,7 +16,6 @@ const Modality = ({ match }) => {
     .then(resp => resp.json())
     .then(data => {
       setPieces(data);
-      console.log(data);
     })
   },[modality])
 

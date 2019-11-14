@@ -24,61 +24,13 @@ const works = [
 	{
 		id: 'painting',
 		name: 'painting',
-		description: 'Portraits, landscapes, and still life',
-		categories: [
-			{
-				id: 'abstract',
-				name: 'abstract',
-				description: 'abstract painting pieces'
-			},
-			{
-				id: 'figure',
-				name: 'figure',
-				description: 'human figure painting'
-			},
-			{
-				id: 'portrait',
-				name: 'portrait',
-				description: 'human portrait painting'
-			},
-			{
-				id: 'stillLife',
-				name: 'still life',
-				description: 'still life painting'
-			},
-			{
-				id: 'landscape',
-				name: 'landscape',
-				description: 'landscape painting'
-			}
-		]
+		description: 'Portraits, landscapes, and still life'
+
 	},
 	{
 		id: 'drawing',
 		name: 'drawing',
-		description: 'Portraits, landscapes, and still life',
-		categories: [
-			{
-				id: 'abstract',
-				name: 'abstract',
-				description: 'abstract drawing'
-			},
-			{
-				id: 'figure',
-				name: 'figure',
-				description: 'human figure drawing'
-			},
-			{
-				id: 'portrait',
-				name: 'portrait',
-				description: 'human portrait drawing'
-			},
-			{
-				id: 'landscape',
-				name: 'landscape',
-				description: 'landscape drawing'
-			}
-		]
+		description: 'Portraits, landscapes, and still life'
 	}	
 ];
 

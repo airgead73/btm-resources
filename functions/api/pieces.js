@@ -20,7 +20,7 @@ const piecesSculpture = [
     modality: 'sculpture',
     medium: 'marble'
   }   
-]
+];
 
 const piecesPainting = [
   {
@@ -35,7 +35,7 @@ const piecesPainting = [
     modality: 'painting',
     medium: 'oil on canvas'
   }   
-]
+];
 
 const piecesDrawing = [
   {
@@ -44,7 +44,58 @@ const piecesDrawing = [
     modality: 'drawing',
     medium: 'pencil'
   }   
-]
+];
+
+const piecesAbstract = [
+  {
+    id: 1,
+    title: 'Abstract: broncos',
+    modality: 'sculpture',
+    medium: 'bronze'
+  },
+  {
+    id: 2,
+    title: 'Abstract: bob hope',
+    modality: 'sculpture',
+    medium: 'plaster'
+  },
+  {
+    id: 3,
+    title: 'Abstract: woman',
+    modality: 'sculpture',
+    medium: 'marble'
+  }   
+];
+
+const piecesFigure = [
+  {
+    id: 1,
+    title: 'Figure: San Juan Bautista',
+    modality: 'painting',
+    medium: 'oil on canvas'
+  },
+  {
+    id: 2,
+    title: 'Figure: quayle',
+    modality: 'painting',
+    medium: 'oil on canvas'
+  }   
+];
+
+const piecesPortait = [
+  {
+    id: 1,
+    title: 'Portrait: San Juan Bautista',
+    modality: 'painting',
+    medium: 'oil on canvas'
+  },
+  {
+    id: 2,
+    title: 'Portrait: quayle',
+    modality: 'painting',
+    medium: 'oil on canvas'
+  }   
+];
 
 const getImages = (req, res) => {
   return cors(req, res, () => {
@@ -76,7 +127,6 @@ const getModality = (req, res) => {
         res.status(202).send(piecesDrawing);
         break;          
     }
-    res.status(202).send(pieceList);
   });
 }
 
@@ -89,7 +139,17 @@ const getCategory = (req, res) => {
     };
     const modality = req.query.modality;
     const category = req.query.category;
-    res.status(202).send(`modality: ${modality} | category: ${category}`);
+    switch(category) {
+      case 'abstract':
+        res.status(202).send(piecesAbstract);
+        break;
+      case 'figure':
+        res.status(202).send(piecesFigure);
+        break; 
+      case 'portrait':
+        res.status(202).send(piecesPortait);
+        break;          
+    }
   });
 }
 
