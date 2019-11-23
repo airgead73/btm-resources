@@ -7,7 +7,7 @@ const data = [
     width: 2055,
     work: "Flower",
     title: "Flower",
-    src: "bm-59.jpg",
+    file: "bm-59.jpg",
     alt: "image: Flower"
   },
   {
@@ -18,7 +18,7 @@ const data = [
     width: 2592,
     work: "Carmel Valley",
     title: "Carmel Valley",
-    src: "bm-77.jpg",
+    file: "bm-77.jpg",
     alt: "image: Carmel Valley"
   },
   {
@@ -29,7 +29,7 @@ const data = [
     width: 2218,
     work: "Frostbiting",
     title: "Frostbiting",
-    src: "bm-78.jpg",
+    file: "bm-78.jpg",
     alt: "image: Frostbiting"
   },
   {
@@ -40,7 +40,7 @@ const data = [
     width: 1963,
     work: "Suspended Woman",
     title: "Suspended Woman",
-    src: "bm-58.jpg",
+    file: "bm-58.jpg",
     alt: "image: Suspended Woman"
   },
   {
@@ -51,7 +51,7 @@ const data = [
     width: 2112,
     work: "Floating Lady",
     title: "Floating Lady",
-    src: "bm-73.jpg",
+    file: "bm-73.jpg",
     alt: "image: Floating Lady"
   },
   {
@@ -62,7 +62,7 @@ const data = [
     width: 2112,
     work: "Tempest",
     title: "Tempest",
-    src: "bm-70.jpg",
+    file: "bm-70.jpg",
     alt: "image: Tempest"
   },
   {
@@ -73,7 +73,7 @@ const data = [
     width: 576,
     work: "Olga Trio",
     title: "Olga Trio",
-    src: "bm-16.jpg",
+    file: "bm-16.jpg",
     alt: "image: Olga Trio"
   },
   {
@@ -84,7 +84,7 @@ const data = [
     width: 1936,
     work: "Tempest",
     title: "Tempest",
-    src: "bm-80.jpg",
+    file: "bm-80.jpg",
     alt: "image: Tempest"
   },
   {
@@ -95,7 +95,7 @@ const data = [
     width: 397,
     work: "Ostrich",
     title: "Ostrich",
-    src: "bm-05.jpg",
+    file: "bm-05.jpg",
     alt: "image: Ostrich"
   },
   {
@@ -106,7 +106,7 @@ const data = [
     width: 576,
     work: "Time & Space",
     title: "Time & Space",
-    src: "bm-40.jpg",
+    file: "bm-40.jpg",
     alt: "image: Time & Space"
   },
   {
@@ -117,7 +117,7 @@ const data = [
     width: 1936,
     work: "Woman at Easel",
     title: "Woman at Easel",
-    src: "bm-74.jpg",
+    file: "bm-74.jpg",
     alt: "image: Woman at Easel"
   },
   {
@@ -128,7 +128,7 @@ const data = [
     width: 576,
     work: "Quayle & Potatos",
     title: "Quayle & Potatos",
-    src: "bm-44.jpg",
+    file: "bm-44.jpg",
     alt: "image: Quayle & Potatos"
   },
   {
@@ -139,7 +139,7 @@ const data = [
     width: 2112,
     work: "Bowtie",
     title: "Bowtie",
-    src: "bm-60.jpg",
+    file: "bm-60.jpg",
     alt: "image: Bowtie"
   },
   {
@@ -150,7 +150,7 @@ const data = [
     width: 2112,
     work: "Abstract IX",
     title: "Abstract IX",
-    src: "bm-62.jpg",
+    file: "bm-62.jpg",
     alt: "image: Abstract IX"
   },
   {
@@ -161,7 +161,7 @@ const data = [
     width: 383,
     work: "Olga Bust",
     title: "Olga Bust",
-    src: "bm-32.jpg",
+    file: "bm-32.jpg",
     alt: "image: Olga Bust"
   },
   {
@@ -172,7 +172,7 @@ const data = [
     width: 576,
     work: "Crocodillian",
     title: "Crocodillian",
-    src: "bm-11.jpg",
+    file: "bm-11.jpg",
     alt: "image: Crocodillian"
   },
   {
@@ -183,7 +183,7 @@ const data = [
     width: 369,
     work: "Linda",
     title: "Linda",
-    src: "bm-47.jpg",
+    file: "bm-47.jpg",
     alt: "image: Linda"
   },
   {
@@ -194,7 +194,7 @@ const data = [
     width: 2112,
     work: "Abstract VIII",
     title: "Abstract VIII",
-    src: "bm-61.jpg",
+    file: "bm-61.jpg",
     alt: "image: Abstract VIII"
   },
   {
@@ -205,7 +205,7 @@ const data = [
     width: 384,
     work: "Summer Dress",
     title: "detail of Summer Dress",
-    src: "bm-28.jpg",
+    file: "bm-28.jpg",
     alt: "image: Summer Dress"
   },
   {
@@ -216,7 +216,7 @@ const data = [
     width: 420,
     work: "Girl from Guam",
     title: "Girl from Guqm",
-    src: "bm-30.jpg",
+    file: "bm-30.jpg",
     alt: "image: Girl from Guam"
   },
   {
@@ -227,7 +227,7 @@ const data = [
     width: 392,
     work: "Unbridled",
     title: "detail of Unbridled",
-    src: "bm-34.jpg",
+    file: "bm-34.jpg",
     alt: "image: Unbridled"
   },
   {
@@ -238,7 +238,7 @@ const data = [
     width: 351,
     work: "Climber",
     title: "Climber",
-    src: "bm-26.jpg",
+    file: "bm-26.jpg",
     alt: "image: Climber"
   },
   {
@@ -249,7 +249,7 @@ const data = [
     width: 366,
     work: "Climber",
     title: "Climber",
-    src: "bm-25.jpg",
+    file: "bm-25.jpg",
     alt: "image: Young Bride"
   },
   {
@@ -260,7 +260,7 @@ const data = [
     width: 395,
     work: "Bronco",
     title: "Bronco",
-    src: "bm-15.jpg",
+    file: "bm-15.jpg",
     alt: "image: Bronco"
   },
   {
@@ -271,7 +271,7 @@ const data = [
     width: 576,
     work: "Bob Hope Reverse",
     title: "Bob Hope Reverse",
-    src: "bm-38.jpg",
+    file: "bm-38.jpg",
     alt: "image: Bob Hope Reverse"
   },
   {
@@ -282,7 +282,7 @@ const data = [
     width: 384,
     work: "Young Longhorns",
     title: "Young Longhorns",
-    src: "bm-09.jpg",
+    file: "bm-09.jpg",
     alt: "image: Young Longhorns"
   },
   {
@@ -293,7 +293,7 @@ const data = [
     width: 469,
     work: "Seated Stephanie",
     title: "Seated Stephanie",
-    src: "bm-41.jpg",
+    file: "bm-41.jpg",
     alt: "image: Seated Stephanie"
   },
   {
@@ -304,7 +304,7 @@ const data = [
     width: 1441,
     work: "Small Mask",
     title: "Small Mask",
-    src: "bm-56.jpg",
+    file: "bm-56.jpg",
     alt: "image: Small Mask"
   },
   {
@@ -315,7 +315,7 @@ const data = [
     width: 2816,
     work: "Reclining Woman",
     title: "Reclining Woman",
-    src: "bm-66.jpg",
+    file: "bm-66.jpg",
     alt: "image: Reclining Woman"
   },
   {
@@ -326,7 +326,7 @@ const data = [
     width: 2112,
     work: "Embryo",
     title: "Embryo",
-    src: "bm-52.jpg",
+    file: "bm-52.jpg",
     alt: "image: Embryo"
   },
   {
@@ -337,7 +337,7 @@ const data = [
     width: 378,
     work: "Unbridled",
     title: "Unbridled",
-    src: "bm-33.jpg",
+    file: "bm-33.jpg",
     alt: "image: Unbridled"
   },
   {
@@ -348,7 +348,7 @@ const data = [
     width: 2816,
     work: "Face Flag",
     title: "Face Flag",
-    src: "bm-72.jpg",
+    file: "bm-72.jpg",
     alt: "image: Face Flag"
   },
   {
@@ -359,7 +359,7 @@ const data = [
     width: 384,
     work: "White Dog",
     title: "White Dog",
-    src: "bm-35.jpg",
+    file: "bm-35.jpg",
     alt: "image: White Dog"
   },
   {
@@ -370,7 +370,7 @@ const data = [
     width: 384,
     work: "Railroad Men",
     title: "Railroad Men",
-    src: "bm-07.jpg",
+    file: "bm-07.jpg",
     alt: "image: Railroad Men"
   },
   {
@@ -381,7 +381,7 @@ const data = [
     width: 419,
     work: "Olga Trio",
     title: "Olga II",
-    src: "bm-18.jpg",
+    file: "bm-18.jpg",
     alt: "image: Olga II"
   },
   {
@@ -392,7 +392,7 @@ const data = [
     width: 2112,
     work: "His",
     title: "His",
-    src: "bm-54.jpg",
+    file: "bm-54.jpg",
     alt: "image: His"
   },
   {
@@ -403,7 +403,7 @@ const data = [
     width: 576,
     work: "Otto, the Lipizzanner",
     title: "Otto, the Lipizzanner",
-    src: "bm-03.jpg",
+    file: "bm-03.jpg",
     alt: "image: Otto, the Lipizzaner"
   },
   {
@@ -414,7 +414,7 @@ const data = [
     width: 2112,
     work: "Abstract IX",
     title: "Abstract IX",
-    src: "bm-64.jpg",
+    file: "bm-64.jpg",
     alt: "image: Abstract IX"
   },
   {
@@ -425,7 +425,7 @@ const data = [
     width: 2742,
     work: "Small Mask",
     title: "Small Mask",
-    src: "bm-55.jpg",
+    file: "bm-55.jpg",
     alt: "image: Small Mask"
   },
   {
@@ -436,7 +436,7 @@ const data = [
     width: 408,
     work: "Rock Fish Model",
     title: "Rock Fish Model",
-    src: "bm-36.jpg",
+    file: "bm-36.jpg",
     alt: "image: Rock Fish Model"
   },
   {
@@ -447,7 +447,7 @@ const data = [
     width: 457,
     work: "San Juan Bautista Mission Bells",
     title: "San Juan Bautista Mission Bells",
-    src: "bm-46.jpg",
+    file: "bm-46.jpg",
     alt: "image: San Juan Bautista Mission Bells"
   },
   {
@@ -458,7 +458,7 @@ const data = [
     width: 396,
     work: "Bronco",
     title: "Bronco",
-    src: "bm-14.jpg",
+    file: "bm-14.jpg",
     alt: "image: Bronco"
   },
   {
@@ -469,7 +469,7 @@ const data = [
     width: 411,
     work: "Girl from Guam",
     title: "Girl from Guqm",
-    src: "bm-29.jpg",
+    file: "bm-29.jpg",
     alt: "image: Girl from Guam"
   },
   {
@@ -480,7 +480,7 @@ const data = [
     width: 384,
     work: "Stephanie",
     title: "Stephanie",
-    src: "bm-21.jpg",
+    file: "bm-21.jpg",
     alt: "image: Stephanie"
   },
   {
@@ -491,7 +491,7 @@ const data = [
     width: 2112,
     work: "Tempest",
     title: "Tempest",
-    src: "bm-69.jpg",
+    file: "bm-69.jpg",
     alt: "image: Tempest"
   },
   {
@@ -502,7 +502,7 @@ const data = [
     width: 2112,
     work: "Floating Lady",
     title: "Floating Lady",
-    src: "bm-57.jpg",
+    file: "bm-57.jpg",
     alt: "image: Floating Lady"
   },
   {
@@ -513,7 +513,7 @@ const data = [
     width: 576,
     work: "Broncos",
     title: "Broncos",
-    src: "bm-13.jpg",
+    file: "bm-13.jpg",
     alt: "image: Broncos"
   },
   {
@@ -524,7 +524,7 @@ const data = [
     width: 2112,
     work: "Abstract IX",
     title: "Abstract IX",
-    src: "bm-63.jpg",
+    file: "bm-63.jpg",
     alt: "image: Abstract IX"
   },
   {
@@ -535,7 +535,7 @@ const data = [
     width: 421,
     work: "Olga Bust",
     title: "Olga Bust",
-    src: "bm-31.jpg",
+    file: "bm-31.jpg",
     alt: "image: Olga Bust"
   },
   {
@@ -546,7 +546,7 @@ const data = [
     width: 463,
     work: "Stephanie back",
     title: "Stephanie back",
-    src: "bm-43.jpg",
+    file: "bm-43.jpg",
     alt: "image: Stephanie back"
   },
   {
@@ -557,7 +557,7 @@ const data = [
     width: 420,
     work: "Ostrich",
     title: "detail of Ostrich",
-    src: "bm-06.jpg",
+    file: "bm-06.jpg",
     alt: "image: Ostrich"
   },
   {
@@ -568,7 +568,7 @@ const data = [
     width: 899,
     work: "Waterfall",
     title: "Waterfall",
-    src: "bm-02.jpg",
+    file: "bm-02.jpg",
     alt: "image: waterfall"
   },
   {
@@ -579,7 +579,7 @@ const data = [
     width: 1726,
     work: "Leaning Woman",
     title: "Leaning Woman",
-    src: "bm-75.jpg",
+    file: "bm-75.jpg",
     alt: "image: Leaning Woman"
   },
   {
@@ -590,7 +590,7 @@ const data = [
     width: 576,
     work: "Olga Trio",
     title: "Olga I",
-    src: "bm-17.jpg",
+    file: "bm-17.jpg",
     alt: "image: Olga I"
   },
   {
@@ -601,7 +601,7 @@ const data = [
     width: 576,
     work: "Bob Hope Obverse",
     title: "Bob Hope Obverse",
-    src: "bm-39.jpg",
+    file: "bm-39.jpg",
     alt: "image: Bob Hope Obverse"
   },
   {
@@ -612,7 +612,7 @@ const data = [
     width: 2112,
     work: "Torso front",
     title: "Torso front",
-    src: "bm-68.jpg",
+    file: "bm-68.jpg",
     alt: "image: Torso front"
   },
   {
@@ -623,7 +623,7 @@ const data = [
     width: 384,
     work: "Railroad Men",
     title: "detail of Railroad Men",
-    src: "bm-08.jpg",
+    file: "bm-08.jpg",
     alt: "image: Railroad Men"
   },
   {
@@ -634,7 +634,7 @@ const data = [
     width: 576,
     work: "Alabaster Rock Fish",
     title: "Alabaster Rock Fish",
-    src: "bm-37.jpg",
+    file: "bm-37.jpg",
     alt: "image: Alabaster Rock Fish"
   },
   {
@@ -645,7 +645,7 @@ const data = [
     width: 2816,
     work: "Reclining Woman",
     title: "Reclining Woman",
-    src: "bm-65.jpg",
+    file: "bm-65.jpg",
     alt: "image: Reclining Woman"
   },
   {
@@ -656,7 +656,7 @@ const data = [
     width: 384,
     work: "Young Bride",
     title: "Young Bride",
-    src: "bm-23.jpg",
+    file: "bm-23.jpg",
     alt: "image: Young Bride"
   },
   {
@@ -667,7 +667,7 @@ const data = [
     width: 384,
     work: "Stephanie",
     title: "detail of Stephanie",
-    src: "bm-22.jpg",
+    file: "bm-22.jpg",
     alt: "image: detail of Stephanie"
   },
   {
@@ -678,7 +678,7 @@ const data = [
     width: 1779,
     work: "Seated Woman",
     title: "Seated Woman",
-    src: "bm-76.jpg",
+    file: "bm-76.jpg",
     alt: "image: Seated Woman"
   },
   {
@@ -689,7 +689,7 @@ const data = [
     width: 2112,
     work: "Torso front",
     title: "Torso front",
-    src: "bm-67.jpg",
+    file: "bm-67.jpg",
     alt: "image: Torso front"
   },
   {
@@ -700,7 +700,7 @@ const data = [
     width: 376,
     work: "Summer Dress",
     title: "Summer Dress",
-    src: "bm-27.jpg",
+    file: "bm-27.jpg",
     alt: "image: Summer Dress"
   },
   {
@@ -711,7 +711,7 @@ const data = [
     width: 428,
     work: "Young Bride",
     title: "Young Bride",
-    src: "bm-24.jpg",
+    file: "bm-24.jpg",
     alt: "image: Young Bride"
   },
   {
@@ -722,7 +722,7 @@ const data = [
     width: 469,
     work: "Stephanie front",
     title: "Stephanie front",
-    src: "bm-42.jpg",
+    file: "bm-42.jpg",
     alt: "image: Stephanie front"
   },
   {
@@ -733,7 +733,7 @@ const data = [
     width: 576,
     work: "Crocodillian",
     title: "detail of Crocodillian",
-    src: "bm-10.jpg",
+    file: "bm-10.jpg",
     alt: "image: Young Longhorns"
   },
   {
@@ -744,7 +744,7 @@ const data = [
     width: 404,
     work: "Olga Trio",
     title: "Olga III",
-    src: "bm-19.jpg",
+    file: "bm-19.jpg",
     alt: "image: Olga III"
   },
   {
@@ -755,7 +755,7 @@ const data = [
     width: 899,
     work: "Waterfall",
     title: "Waterfall",
-    src: "bm-01.jpg",
+    file: "bm-01.jpg",
     alt: "image: waterfall"
   },
   {
@@ -766,7 +766,7 @@ const data = [
     width: 2112,
     work: "Embryo",
     title: "Embryo",
-    src: "bm-53.jpg",
+    file: "bm-53.jpg",
     alt: "image: Embryo"
   },
   {
@@ -777,7 +777,7 @@ const data = [
     width: 2816,
     work: "Face Flag",
     title: "Face Flag",
-    src: "bm-71.jpg",
+    file: "bm-71.jpg",
     alt: "image: Face Flag"
   },
   {
@@ -788,7 +788,7 @@ const data = [
     width: 433,
     work: "Otto, the Lipizzanner",
     title: "detail of Otto",
-    src: "bm-04.jpg",
+    file: "bm-04.jpg",
     alt: "image: Otto, the Lipizzaner"
   },
   {
@@ -799,7 +799,7 @@ const data = [
     width: 384,
     work: "Olga Trio",
     title: "Olga Trio",
-    src: "bm-20.jpg",
+    file: "bm-20.jpg",
     alt: "image: Olga Trio"
   }
 ];
