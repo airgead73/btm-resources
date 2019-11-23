@@ -17,7 +17,8 @@ const Modality = ({ match }) => {
     .then(data => {
       setPieces(data);
     })
-  },[modality])
+    .then(console.log('pieces, ', pieces))
+  },[modality, pieces])
 
 	return (
     <React.Fragment>

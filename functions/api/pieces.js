@@ -1,5 +1,24 @@
 const cors = require('cors')({ origin: true });
-//const DB = require('./admin');
+const DB = require('./admin');
+
+const retrieveModality = (res, modality) => {
+  const images = [];
+  return DB.collection('images')
+  .where('modality', '==', modality)
+  .get()
+  .then((snapshot) => {
+    images = snapshot.docs.map(doc =>({
+      id: doc.id,
+      ...doc.data()
+    }));
+  })
+  .then(() => {
+    res.status(202).send(images)
+  })
+  .catch((err) => {
+    res.status(401).send(err)
+  });
+}
 
 const piecesSculpture = [
   {
@@ -116,17 +135,8 @@ const getModality = (req, res) => {
       });
     };
     const modality = req.query.modality;
-    switch(modality) {
-      case 'sculpture':
-        res.status(202).send(piecesSculpture);
-        break;
-      case 'painting':
-        res.status(202).send(piecesPainting);
-        break; 
-      case 'drawing':
-        res.status(202).send(piecesDrawing);
-        break;          
-    }
+    retrieveModality(res, modality);
+
   });
 }
 
