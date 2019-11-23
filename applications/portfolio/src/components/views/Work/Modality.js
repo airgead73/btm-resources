@@ -7,18 +7,25 @@ import Category from './Category';
 import NavCategory from '../../page/Nav/NavCategory';
 
 const Modality = ({ match }) => {
+  const [ isLoading, setLoading ] = useState(true);
   const [ pieces, setPieces ] = useState([]);
   const modality = works.find(({ id }) => id === match.params.modalityID);
   const { categories } = modality;
 
-  useEffect(() => {
-    fetch(`https://us-central1-btm-resources.cloudfunctions.net/getModality?modality=${modality.id}`)
+  const getModality = (modality) => {
+    fetch(`https://us-central1-btm-resources.cloudfunctions.net/getModality?modality=${modality}`)
     .then(resp => resp.json())
     .then(data => {
       setPieces(data);
     })
-    .then(console.log('pieces, ', pieces))
-  },[modality, pieces])
+    .then(() => setLoading(false))    
+  }
+
+  useEffect(() => {
+    if(categories) {
+      getModality(modality.id);
+    };
+  },[modality, isLoading])
 
 	return (
     <React.Fragment>
@@ -33,13 +40,15 @@ const Modality = ({ match }) => {
 
       {!categories && (
         <React.Fragment>
-        <ul>
         {pieces.map(piece => {
           return (
-            <li key={piece.id}>{piece.title} | {piece.medium}</li>
+            <ul key={piece.id}>
+              <li>{piece.title}</li>
+              <li>{piece.src}</li>
+              <li>{piece.alt}</li>
+            </ul>
           )
-        })}
-        </ul>          
+        })}         
         </React.Fragment>
       )}  
     </React.Fragment>

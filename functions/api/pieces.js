@@ -1,120 +1,70 @@
 const cors = require('cors')({ origin: true });
 const DB = require('./admin');
 
-const retrieveModality = (res, modality) => {
-  const images = [];
+const BASE_URL = 'https://res.cloudinary.com/dpm/image/upload/w_750/l_text:Verdana_12_normal:%C2%A9%20Brian%20Moneypenny,g_south_east,y_8,x_8,co_rgb:FFFFFF/bmoneypenny/work/'
+
+const retrieveImages = (res) => {
+  let images = [];
   return DB.collection('images')
-  .where('modality', '==', modality)
-  .get()
-  .then((snapshot) => {
-    images = snapshot.docs.map(doc =>({
-      id: doc.id,
-      ...doc.data()
-    }));
-  })
-  .then(() => {
-    res.status(202).send(images)
-  })
-  .catch((err) => {
-    res.status(401).send(err)
-  });
+         .get()
+         .then((snapshot) => {
+           images = snapshot.docs.map(doc => ({
+             id: doc.id,
+             ...doc.data()
+           }));
+         })
+         .then(() => {
+           res.status(200).json(images);
+         })
+         .catch((err) => {
+           res.status(err.status).json({
+             message: err.message
+           });
+         })
 }
 
-const piecesSculpture = [
-  {
-    id: 1,
-    title: 'broncos',
-    modality: 'sculpture',
-    medium: 'bronze'
-  },
-  {
-    id: 2,
-    title: 'bob hope',
-    modality: 'sculpture',
-    medium: 'plaster'
-  },
-  {
-    id: 3,
-    title: 'woman',
-    modality: 'sculpture',
-    medium: 'marble'
-  }   
-];
+const retrieveModality = (res, modality) => {
+  let images = [];
+  return DB.collection('images')
+         .where("modality", "==", modality)
+         .get()
+         .then((snapshot) => {
+          images = snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+         })
+         .then(() => {
+           res.status(200).json(images);
+         })
+         .catch((err) => {
+           res.status(err.status).json({
+             message: err.message
+           });
+         })
+}
 
-const piecesPainting = [
-  {
-    id: 1,
-    title: 'San Juan Bautista',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  },
-  {
-    id: 2,
-    title: 'quayle',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  }   
-];
-
-const piecesDrawing = [
-  {
-    id: 1,
-    title: 'stacey',
-    modality: 'drawing',
-    medium: 'pencil'
-  }   
-];
-
-const piecesAbstract = [
-  {
-    id: 1,
-    title: 'Abstract: broncos',
-    modality: 'sculpture',
-    medium: 'bronze'
-  },
-  {
-    id: 2,
-    title: 'Abstract: bob hope',
-    modality: 'sculpture',
-    medium: 'plaster'
-  },
-  {
-    id: 3,
-    title: 'Abstract: woman',
-    modality: 'sculpture',
-    medium: 'marble'
-  }   
-];
-
-const piecesFigure = [
-  {
-    id: 1,
-    title: 'Figure: San Juan Bautista',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  },
-  {
-    id: 2,
-    title: 'Figure: quayle',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  }   
-];
-
-const piecesPortait = [
-  {
-    id: 1,
-    title: 'Portrait: San Juan Bautista',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  },
-  {
-    id: 2,
-    title: 'Portrait: quayle',
-    modality: 'painting',
-    medium: 'oil on canvas'
-  }   
-];
+const retrieveCategory = (res, modality, category) => {
+  let images = [];
+  return DB.collection('images')
+         .where("modality", "==", modality)
+         .where("category", "==", category)
+         .get()
+         .then((snapshot) => {
+          images = snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+         })
+         .then(() => {
+           res.status(200).json(images);
+         })
+         .catch((err) => {
+           res.status(err.status).json({
+             message: err.message
+           });
+         })
+}
 
 const getImages = (req, res) => {
   return cors(req, res, () => {
@@ -123,7 +73,8 @@ const getImages = (req, res) => {
         message: 'method not allowed'
       });
     };
-    res.status(202).send('get all images');
+    //res.status(202).send("get all images");
+    retrieveImages(res);
   });
 }
 
@@ -135,6 +86,7 @@ const getModality = (req, res) => {
       });
     };
     const modality = req.query.modality;
+    //res.status(202).send(`get ${modality}`);
     retrieveModality(res, modality);
 
   });
@@ -149,17 +101,9 @@ const getCategory = (req, res) => {
     };
     const modality = req.query.modality;
     const category = req.query.category;
-    switch(category) {
-      case 'abstract':
-        res.status(202).send(piecesAbstract);
-        break;
-      case 'figure':
-        res.status(202).send(piecesFigure);
-        break; 
-      case 'portrait':
-        res.status(202).send(piecesPortait);
-        break;          
-    }
+    //res.status(202).send(`get ${modality} | ${category}`);
+    retrieveCategory(res, modality, category);
+
   });
 }
 
