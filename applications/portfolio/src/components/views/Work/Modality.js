@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import works from '../../../routes/routes';
+import Gallery from 'react-photo-gallery'
 
 // component
 import Category from './Category';
@@ -47,15 +48,7 @@ const Modality = ({ match }) => {
 
       {!categories && (
         <React.Fragment>
-        {pieces.map(piece => {
-          return (
-            <ul key={piece.id}>
-              <li>{piece.title}</li>
-              <li>{piece.src}</li>
-              <li>{piece.alt}</li>
-            </ul>
-          )
-        })}         
+          <Gallery photos={pieces}/>
         </React.Fragment>
       )}  
     </React.Fragment>
