@@ -6,6 +6,9 @@
 
 # firebase
 **/firebase.config.js
+*.cache
+**/.firebase
+.firebase/
 
 # package
 **/npm-debug.log*
