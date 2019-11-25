@@ -11,21 +11,9 @@ const NavMain = () => {
 					<NavLink
 						className="button"
 						activeClassName="nav-active"
-						to="/"
-						onClick={() => {
-							changeLevel('a', 'home');
-						}}
-					>
-						home
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className="button"
-						activeClassName="nav-active"
 						to="/about"
 						onClick={() => {
-							changeLevel('a', 'about');
+							changeLevel('about', 'about');
 						}}
 					>
 						about
@@ -37,36 +25,12 @@ const NavMain = () => {
 						activeClassName="nav-active"
 						to="/work"
 						onClick={() => {
-							changeLevel('a', 'work');
+							changeLevel('work', 'work');
 						}}
 					>
 						work
 					</NavLink>
 				</li>
-				<li>
-					<NavLink
-						className="button"
-						activeClassName="nav-active"
-						to="/contact"
-						onClick={() => {
-							changeLevel('a', 'contact');
-						}}
-					>
-						contact
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className="button"
-						activeClassName="nav-active"
-						to="/terms"
-						onClick={() => {
-							changeLevel('a', 'terms');
-						}}
-					>
-						terms
-					</NavLink>
-				</li>			
 			</ul>
 		</nav>
 	);

@@ -12,6 +12,7 @@ import Container from './components/grid/Container';
 import Header from './components/page/Header';
 import NavMain from './components/page/Nav/NavMain';
 import Main from './components/page/Main';
+import Footer from './components/page/Footer';
 
 // views
 import Home from './components/views/Home';
@@ -24,17 +25,17 @@ import Seed from './components/views/Seed';
 
 const App = () => {
 
-	const { docTitle } = useContext(ViewContext);
+	const { docTitle, viewClass } = useContext(ViewContext);
 	
 	useEffect(() => {
 		document.title = docTitle;
 	},[docTitle]);
 
 	return (
-		<Container>
-			<Header/>
+		<Container containerClass={viewClass}>
+			<Header headerClass={viewClass}/>
 			<NavMain/>
-			<Main>
+			<Main mainClass={viewClass}>
 				<Switch>
 					<Route
 						path='/'
@@ -66,6 +67,7 @@ const App = () => {
 					/>																							
 				</Switch>
 			</Main>
+			<Footer footerClass={viewClass}/>
 		</Container>
 	);
 }

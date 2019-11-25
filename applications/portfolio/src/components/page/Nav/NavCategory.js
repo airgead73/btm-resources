@@ -4,7 +4,7 @@ import { ViewContext } from '../../../contexts/ViewContext';
 
 const NavCategory = ({ match, modality }) => {
 	const { changeLevel } = useContext(ViewContext);
-	const { modalityID } = match.params;
+	const { modalityID, categoryID } = match.params;
 
 	return (
 		<ul>
@@ -13,7 +13,7 @@ const NavCategory = ({ match, modality }) => {
 					<Link
 						to={`${match.url}/${category.id}`}
 						onClick={() => {
-							changeLevel('c', `${modalityID} | ${category.name}`);
+							changeLevel(`work modality_${modalityID} category_${category.name}`, `${modalityID} | ${category.name}`);
 						}}
 					>
 						{category.name}

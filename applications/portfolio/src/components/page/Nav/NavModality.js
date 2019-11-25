@@ -14,7 +14,7 @@ const NavModality = ({ match }) => {
 					<Link
 						to={`${match.url}/${id}`}
 						onClick={() => {
-							changeLevel('b', `${name}`);
+							changeLevel(`work modality_${name}`, `${name}`);
 						}}
 					>
 						{name}

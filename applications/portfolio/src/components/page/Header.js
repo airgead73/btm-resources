@@ -11,7 +11,7 @@ const Header = ({ headerClass }) => {
           to="/" 
           title="return to home page"
           onClick={() => {
-            changeLevel('a', 'home');
+            changeLevel('home', 'brian moneypenny');
           }}
         >
 					btm

@@ -3,20 +3,20 @@ import React, { useState } from 'react';
 export const ViewContext = React.createContext();
 
 export const ViewProvider = props => {
-	const [level, setLevel] = useState('');
-	const [docTitle, setTitle] = useState('home');
+	const [viewClass, setViewClass] = useState('home');
+	const [docTitle, setTitle] = useState('brian moneypenny');
 
-	const changeLevel = (newLevel, newTitle) => {
-		setLevel(newLevel);
+	const changeLevel = (newClass, newTitle) => {
+		setViewClass(newClass);
 		setTitle(newTitle);
-		// console.table({
-		// 	level: newLevel,
-		// 	title: newTitle
-		// });
+		console.table({
+			viewClass: newClass,
+			title: newTitle
+		});
 	};
 
 	return (
-		<ViewContext.Provider value={{ docTitle, level, changeLevel }}>
+		<ViewContext.Provider value={{ docTitle, viewClass, changeLevel }}>
 			{props.children}
 		</ViewContext.Provider>
 	);
