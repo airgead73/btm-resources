@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import works from '../../../routes/routes';
-import Gallery from 'react-photo-gallery'
+import GalleryContainer from './GalleryContainer';
 
 // component
 import Category from './Category';
@@ -48,7 +48,7 @@ const Modality = ({ match }) => {
 
       {!categories && (
         <React.Fragment>
-          <Gallery photos={pieces}/>
+          <GalleryContainer photos={pieces}/>
         </React.Fragment>
       )}  
     </React.Fragment>
