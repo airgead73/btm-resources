@@ -3,7 +3,11 @@ import React from 'react';
 const Contact = () => {
 
   return ( 
-    <h1>Contact</h1>
+    <React.Fragment>
+      <h1>Contact</h1>
+      <p>brian@gmail.com</p>
+    </React.Fragment>
+    
    );
 }
  
