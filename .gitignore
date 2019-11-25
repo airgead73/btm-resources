@@ -15,5 +15,10 @@
 **/yarn-debug.log*
 **/yarn-error.log*
 
-#production
+# production
 **/build
+
+# images
+*.png
+*.jpg
+*.svg
